@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+:root {
+
+    --cor-primaria: black;
+    --cor-secundaria: white;
+    --cor-terciaria: orangered;
+    --cor-hover: #272727;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.navbar {
+    padding: 2% 0% 0% 16%;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 80px;
+}
+
+.navbar-menu-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.destaque {
+    color: var(--cor-terciaria);
+}
+
+.ordem {
+    padding: 6% 16%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.ordem_estilo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.ordem_titulo {
+    font-size: 2.2rem;
+    font-family: 'Krona One', sans-serif;
+}
+
+.ordem_texto {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ordem_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:32px ;
+}
+
+.ordem_links_subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.ordem_links_estilo {
+    /* background-color: var(--cor-terciaria); */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 50%;
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid var(--cor-terciaria) ;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ordem_links_estilo:hover {
+    background-color: var(--cor-hover);
+}
+
+.imagem {
+    width: 50%;
+}
+
+.footer_estilo {
+    padding: 24px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-hover);
+}
+
+@media (max-width:1000px) {
+    .navbar {
+        padding: 10%;
+    }
+
+    .navbar-menu {
+        justify-content: center;
+    }
+
+    .ordem {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .ordem_estilo {
+        width: auto;
+    }
+
+}
